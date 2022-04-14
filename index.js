@@ -12,7 +12,7 @@ exports.handler = async function (event) {
     console.log("email " + email);
     console.log("SNS index file updated");
     let token = crypto.randomBytes(16).toString("hex");
-    const seconds = 5 * 60;
+    const seconds = 2 * 60;
     const secondsInEpoch = Math.round(Date.now() / 1000);
     const expirationTime = secondsInEpoch + seconds;
     const currentTime = Math.round(Date.now() / 1000);
