@@ -46,21 +46,36 @@ var params = {
     ToAddresses: [email],
   },
   Message: {
-    Body: {
-      Html: {
-        Charset: "UTF-8",
-        Data:
-        '<html><head>' +
-        '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />' +
-        '<title>' + "test" + '</title>' +  
-        '</head><body>' +
-        'This is the link to update your password. It is valid for five minutes.' +
-        '<br><br>' +
-        "<a href=\"http://" + "demo.khismatrao.me" + "/v1/user/verifyUser/" + token + "/" + email + "\">" +
-        "http://" + "demo.khismatrao.me" + "/v1/user/verifyUser/" + token + "/" + email + "</a>"
-        +'</body></html>',
-      },
-    }, 
+
+Body: {
+
+Html: {
+
+Charset: "UTF-8",
+
+Data:
+
+'<html><head>' +
+
+'<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />' +
+
+'<title>' + "test" + '</title>' +
+
+'</head><body>' +
+
+'This is the link to update your password. It is valid for five minutes.' +
+
+'<br><br>' +
+
+"<a href=\"http://" + "demo.khismatrao.me" + "/v1/verifyUserEmail?email=" + email + "&token=" + token + "\">" +
+
+"Verify_Account</a>"
+
++'</body></html>',
+
+},
+
+}, 
     Subject: {
         Charset: "UTF-8",
         Data: "CSYE 6225: Verify Email Address",
