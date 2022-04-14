@@ -19,11 +19,11 @@ exports.handler = async function (event) {
     console.log("next line " );
     //Creating a table for DynamoDB
 var table = {
-    TableName : "csye6225",
+    TableName : "csye",
     Item:{
       "username" : email,
       "token" : token,
-      "TimeToExist" :expirationTime
+      "TimeToLive" :expirationTime
     }
   }
   console.log("Adding a new item...");
