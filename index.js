@@ -67,7 +67,7 @@ Data:
 
 '<br><br>' +
 
-"<a href=\"http://" + "demo.khismatrao.me" + "/v1/verifyUserEmail?email=" + email + "&token=" + token + "\">" +
+"<a href=\"https://" + "demo.khismatrao.me" + "/v1/verifyUserEmail?email=" + email + "&token=" + token + "\">" +
 
 "Verify_Account</a>"
 
